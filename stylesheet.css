@@ -1,0 +1,640 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------ */
+html {
+    font-size: 100%;
+}
+body {
+    font-family: "Yu Gothic Medium", "遊ゴシック Medium", YuGothic, "遊ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: rgb(248, 85, 3);
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/* HEADER
+-------------------------- */
+.logo {
+    width: 80px;
+    margin-top: 14px;
+}
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: rgb(248, 85, 3);
+}
+.main-nav a:hover {
+    color: rgb(237, 119, 79);
+}
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+
+/* HOME
+----------------------------- */
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+/* 見出し */
+.page-title {
+    font-size: 6rem;
+    font-family: 'Philosopher', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+/* ボタン */
+.button {
+    font-size: 1.375rem;
+    background: rgb(248, 85, 3);
+    color: #fff8ef;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+.button:hover {
+    background: rgb(237, 119, 79);
+}
+/* 大きな背景画像 */
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+}
+#home {
+    background-image: url(../../../../Downloads/IMG_1863.jpeg);
+    min-height: 100vh;
+}
+#home .page-title {
+    text-transform: none;
+}
+/* ABOUT
+-------------------------- */
+#about {
+    background-image: url(../../../../Downloads/IMG_1864.jpeg);
+    height: 270px;
+    margin-top: 0;
+   
+}
+#about .page-title{
+    text-align: center top;
+    text-transform: none;
+}
+.out0 {
+    text-align: left;
+    color: black;
+    font-size: 95px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.out1 {
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 50px;
+    color: black;
+    font-size: 20px;
+}
+.out2 {
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-bottom: 10%;
+    color: black;
+}
+/* SKILLS */
+#skills {
+    background: rgb(133, 113, 99);
+    
+}
+#skills .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#skills .sub-title {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 95px;
+    margin-left: -60%;
+}
+#skills .mini-title {
+    margin-bottom: 30%;
+    color: rgb(248, 85, 3);
+    font-size: 20px;
+    margin-top: -28%;
+    margin-left: -60%;
+}
+
+
+.post-detail {
+    font-size: 17px;
+    color: #fff;
+    margin-top: 20%;
+    margin-bottom: 15%;
+}
+/* STRENGTH */
+#strength {
+    color: black;
+    font-size: 95px;
+    margin-left: 50px;
+}
+#strength .mini-title2 {
+    margin-bottom: 0%;
+    color: rgb(248, 85, 3);
+    font-size: 20px;
+    margin-top: -4.3%;
+}
+.item0 .circle {
+    font-size: 20px;
+    display: inline-block;
+    width: 320px;
+    height: 320px;
+    border-radius: 80%;
+    background-color: #9d948c;
+    text-align: center;
+    line-height: 320px;
+    color: bisque;
+    margin-top: -15%;
+    align-items: center;
+}
+.o1 {
+    font-size: 15px;
+    margin-left: 50px;
+}
+.o1title {
+    font-size: 50px;
+    margin-left: 50px;
+}
+.o1detail {
+    font-size: 18px;
+    margin-left: 50px;
+    margin-bottom: 10%;
+}
+.o2 {
+    font-size: 15px;
+    margin-left: 50px;
+}
+.o2title {
+    font-size: 50px;
+    margin-left: 50px;
+}
+.o2detail {
+    font-size: 18px;
+    margin-left: 50px;
+    margin-bottom: 10%;
+}
+.o3 {
+    font-size: 15px;
+    margin-left: 50px;
+}
+.o3title {
+    font-size: 50px;
+    margin-left: 50px;
+}
+.o3detail {
+    font-size: 18px;
+    margin-left: 50px;
+    margin-bottom: 10%;
+}
+
+
+/* フッター
+-------------------------- */
+footer {
+    background: rgb(248, 85, 3);
+    text-align: center;
+    padding: 26px 0;
+}
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+/* モバイル版
+-------------------------- */
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    /* HEADER */
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .main-nav li {
+        margin: 0 20px;
+    }
+
+    /* HOME */
+    .home-content {
+        margin-top: 20%;
+    }
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* ABOUT */
+    .about-contents {
+        flex-direction: column;
+    }
+    article,
+    aside {
+        width: 100%;
+    }
+    #about .page-title {
+        margin-top: 30px;
+    }
+
+    /* WORKS */
+    .works-content {
+        margin-top: 20%;
+    }
+    .big-box {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .big-box img {
+        height: auto;
+    }
+    /* CONTACT */
+    #contact .page-title {
+        margin-top: 40px;
+    }
+    /* フォーム */
+    input[type="text"],
+    input[type="enail"],
+    textarea {
+        max-width: 100%;
+    }
+
+}
+
+/* 記事部分 */
+.out {
+    background-color: #fff8ef;
+   
+    text-align: center;
+    
+}
+/* WORKS
+---------------------------- */
+#works {
+    background-color: rgb(133, 113, 99);
+    background-size: cover;
+    margin-top: 0%;
+    min-height: 100vh;
+    margin-bottom: -50px;
+}
+
+.page-title {
+    text-align: center;
+}
+.works-content p {
+    font-size: 1.125rem;
+    margin:  0;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    margin-top: 10%;
+    margin-bottom: 50px;
+
+
+}
+.big-box {
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+    align-items: center;
+    text-align: center;
+
+}
+.big-box img {
+    object-fit: cover;
+}
+.item1 {
+    margin-top: 20%;
+    grid-template-columns: repeat(3, 1fr);
+}
+.item1 img {
+object-fit: cover;
+width: 100%;
+
+}
+.item2 {
+    margin-top: 20%;
+    align-items: center;
+    margin-bottom: 20%;
+}
+.grid p {
+    color: black;
+}
+
+/* WORKS1 */
+.title {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+.subtitle {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+.detail {
+    margin-left: 10%;
+    margin-top: 15%;
+    font-size: 18px;
+    color: black;
+}
+.overviewtitle {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+    color: black;
+}
+.overview {
+    margin-left: 10%;
+    color: black;
+    font-size: 18px;
+}
+.explaintitle {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+    color: black;
+}
+.explain {
+    margin-left: 10%;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 15%;
+}
+/* WORKS2 */
+.title2 {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+.subtitle2 {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+.detail2 {
+    margin-left: 10%;
+    margin-top: 15%;
+    font-size: 18px;
+    color: black;
+}
+.overviewtitle2 {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+    color: black;
+}
+.overview2 {
+    margin-left: 10%;
+    color: black;
+    font-size: 18px;
+}
+.explaintitle2 {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+    color: black;
+}
+.explain2 {
+    margin-left: 10%;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 15%;
+}
+/* WORKS3 */
+.item3 {
+    padding: 400px 500px;
+    margin-top: -22%;
+}
+.title3 {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    margin-top: -22%;
+}
+.subtitle3 {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+   
+}
+.detail3 {
+    margin-left: 10%;
+    margin-top: 15%;
+    font-size: 18px;
+    color: black;
+}
+.overviewtitle3 {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+    color: black;
+}
+.overview3 {
+    margin-left: 10%;
+    color: black;
+    font-size: 18px;
+}
+.explaintitle3 {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+    color: black;
+}
+.explain3 {
+    margin-left: 10%;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 15%;
+}
+/* WORKS4 */
+.item4 {
+    text-align: center;
+    color: black;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.title4 {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+.subtitle4 {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+.detail4 {
+    margin-left: 10%;
+    margin-top: 15%;
+    font-size: 18px;
+    color: black;
+}
+.overviewtitle44 {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+    color: black;
+}
+.overview4 {
+    margin-left: 10%;
+    color: black;
+    font-size: 18px;
+}
+.explaintitle4 {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+    color: black;
+}
+.explain4 {
+    margin-left: 10%;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 15%;
+}
+/* WORKS5 */
+.item5 {
+    text-align: center;
+    color: black;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+.title5 {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+.subtitle5 {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+.detail5 {
+    margin-left: 10%;
+    margin-top: 15%;
+    font-size: 18px;
+    color: black;
+}
+.overviewtitle5 {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+    color: black;
+}
+.overview5 {
+    margin-left: 10%;
+    color: black;
+    font-size: 18px;
+}
+.explaintitle5 {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+    color: black;
+}
+.explain5 {
+    margin-left: 10%;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 15%;
+}
+/* WORKS6 */
+.item6 {
+    text-align: center;
+    color: black;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    align-items: center;
+    
+}
+.title6 {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+}
+.subtitle6 {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+.detail6 {
+    margin-left: 10%;
+    margin-top: 15%;
+    font-size: 18px;
+    color: black;
+}
+.overviewtitle6 {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+    color: black;
+}
+.overview6 {
+    margin-left: 10%;
+    color: black;
+    font-size: 18px;
+}
+.explaintitle6 {
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+    color: black;
+}
+.explain6 {
+    margin-left: 10%;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 15%;
+}
+/* CONTACT
+--------------------------- */
+#contact {
+    background-image: url(../../../../Downloads/IMG_2055.jpeg);
+    min-height: 100vh;
+}
+.adress {
+    font-size: 70px;
+    margin-top: 10%;
+}
+.message {
+    color: black;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
