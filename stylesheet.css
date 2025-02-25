@@ -122,48 +122,45 @@ img {
     margin-left: 50px;
     margin-bottom: 10%;
     color: black;
+    font-size: 17px;
 }
 /* SKILLS */
 #skills {
     background: rgb(133, 113, 99);
-    
-}
-#skills .wrapper {
-    display: flex;
-    justify-content: space-between;
+    height: 580px;
 }
 #skills .sub-title {
-    margin-bottom: 30px;
     color: #fff;
     font-size: 95px;
-    margin-left: -30%;
+    text-align: right;
+    margin-top: 20px;
 }
 #skills .mini-title {
-    margin-bottom: 30%;
+    text-align: right;
     color: rgb(248, 85, 3);
     font-size: 20px;
-    margin-top: -28%;
-    margin-left: -30%;
+    margin-top: -20px;
 }
-
-
-.post-detail {
+#skills .post-detail {
+    text-align: right;
     font-size: 17px;
     color: #fff;
-    margin-top: 20%;
-    margin-bottom: 15%;
+    margin-top: 10%;
+    margin-bottom: 0%;
 }
 /* STRENGTH */
-#strength {
+#strength .sub-title2 {
     color: black;
     font-size: 95px;
-    margin-left: 50px;
+    margin-top: 20px;
+    margin-left: 40px;
 }
 #strength .mini-title2 {
-    margin-bottom: 0%;
+    text-align: left;
     color: rgb(248, 85, 3);
     font-size: 20px;
-    margin-top: -4.3%;
+    margin-top: -20px;
+    margin-left: 40px;
 }
 .item0 .circle {
     font-size: 20px;
@@ -175,6 +172,15 @@ img {
     text-align: center;
     line-height: 320px;
     color: bisque;
+    margin-top: -15%;
+    align-items: center;
+}
+.item0:hover {
+    display: inline-block;
+    width: 320px;
+    height: 320px;
+    border-radius: 80%;
+    background-color: rgb(237, 119, 79);
     margin-top: -15%;
     align-items: center;
 }
@@ -190,6 +196,7 @@ img {
     font-size: 18px;
     margin-left: 50px;
     margin-bottom: 10%;
+    color: black;
 }
 .o2 {
     font-size: 15px;
@@ -203,6 +210,7 @@ img {
     font-size: 18px;
     margin-left: 50px;
     margin-bottom: 10%;
+    color: black;
 }
 .o3 {
     font-size: 15px;
@@ -216,6 +224,7 @@ img {
     font-size: 18px;
     margin-left: 50px;
     margin-bottom: 10%;
+    color: black;
 }
 
 
@@ -278,6 +287,13 @@ footer p {
     .big-box img {
         height: auto;
     }
+    .grid {
+        display: grid;
+        gap: 26px;
+        grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+        margin-top: 6%;
+        margin-bottom: 50px;
+    }
     /* CONTACT */
     #contact .page-title {
         margin-top: 40px;
@@ -326,30 +342,16 @@ footer p {
 
 
 }
-.big-box {
-    grid-column: 1 / 4;
-    grid-row: 1 / 3;
-    align-items: center;
-    text-align: center;
-
-}
-.big-box img {
-    object-fit: cover;
-}
-.item1 {
+.item {
     margin-top: 20%;
     grid-template-columns: repeat(3, 1fr);
 }
-.item1 img {
+.item img {
 object-fit: cover;
 width: 100%;
 
 }
-.item2 {
-    margin-top: 20%;
-    align-items: center;
-    margin-bottom: 20%;
-}
+
 .grid p {
     color: black;
 }
