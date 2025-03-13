@@ -172,7 +172,7 @@ img {
     text-align: center;
     line-height: 320px;
     color: bisque;
-    margin-top: -15%;
+    margin-top: 30%;
     align-items: center;
 }
 .item0:hover {
@@ -181,7 +181,7 @@ img {
     height: 320px;
     border-radius: 80%;
     background-color: rgb(237, 119, 79);
-    margin-top: -15%;
+    margin-top: 5%;
     align-items: center;
 }
 .o1 {
