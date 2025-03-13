@@ -298,6 +298,9 @@ footer p {
     #contact .page-title {
         margin-top: 40px;
     }
+    #contact .adress {
+        font-size: 2.8rem;
+    }
     /* フォーム */
     input[type="text"],
     input[type="enail"],
